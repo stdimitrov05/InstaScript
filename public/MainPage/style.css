@@ -1,0 +1,77 @@
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.text{
+  display: hidden;
+}
+.back {
+  background-image: url(https://images.pexels.com/photos/1903702/pexels-photo-1903702.jpeg?cs=srgb&dl=pexels-roberto-shumski-1903702.jpg&fm=jpg);
+  background-repeat: no-repeat;
+  background-size: 1500px 800px;
+  overflow: hidden;
+}
+.main-container{
+  padding-top: 10px;
+  text-align: center;
+  color: #f2f2f2;
+  display: inline;
+}
+.title{
+  color: #f2f2f2;
+}
+.desc{
+  color: #fff;
+  text-align: center;
+  font-size: 20px;
+}
+
+
+.wsjg {
+  color: rgb(8, 84, 248);
+  overflow: hidden;
+  text-align: center;
+  font-family: "Original Surfer", cursive;
+  position: relative;
+  animation: mymove 12s infinite;
+  animation-timing-function: linear;
+}
+@keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 800px;
+    color: black;
+  }
+}
+.logo{
+  overflow: hidden;
+  image-resolution: 1800px 800px;
+  padding-left: 250px;
+width: 800px;
+height: 500px;
+}

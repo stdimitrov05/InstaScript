@@ -1,0 +1,567 @@
+@import url("https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap");
+
+:root {
+  --dark-color-a: #09affc;
+  --dark-color-b: #f11212;
+
+  --success-color: #5cb85c;
+  --error-color: #d9534f;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  background: var(--light-color);
+  margin: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  cursor: pointer;
+  padding: 5px 15px;
+  font-size: 20px;
+
+  font-family: "Original Surfer", cursive;
+  background: var(--light-color);
+  color: var(--dark-color-a);
+  border: 0;
+  font-size: 17px;
+}
+
+/* Chat Page */
+
+.chat-container {
+  max-width: auto;
+  padding: 10px;
+
+  margin: auto;
+  overflow: hidden;
+}
+
+.chat-header {
+  color: rgb(242, 241, 247);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chat-main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  overflow: hidden;
+  height: 700px;
+}
+
+.chat-sidebar {
+ 
+  color: rgb(25, 152, 255);
+  padding: 20px;
+  height: auto;
+  overflow-y: scroll;
+}
+
+.nickname{
+  text-align: center;
+}
+.chat-sidebar h2 {
+  font-size: 20px;
+
+  padding: 20px;
+  margin-bottom: 20px;
+  max-width: 200px;
+}
+
+.chat-sidebar h3 {
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 5px;
+}
+
+.chat-sidebar ul li {
+  padding: 10px 0;
+}
+
+.chat-messages {
+  padding: 5px;
+  color: #fafafa;
+  overflow-y: scroll;
+}
+
+.chat-messages .message {
+  padding: 10px;
+  margin-bottom: 15px;
+  background-color: var(--light-color);
+  border-radius: 5px;
+  overflow-wrap: break-word;
+}
+
+.chat-messages .message .meta {
+  font-size: 15px;
+  font-weight: bold;
+
+  opacity: 0.7;
+  margin-bottom: 7px;
+}
+
+.chat-messages .message .meta span {
+  color: rgb(248, 248, 248);
+}
+
+.chat-form-container {
+  padding: 20px 30px;
+}
+
+.chat-form-container form {
+  display: flex;
+}
+
+.chat-form-container input[type="text"] {
+  font-size: 16px;
+  padding: 5px;
+  height: 40px;
+  flex: 1;
+}
+
+
+/* Join Page */
+#clock {
+  width: 20px;
+  display: flex;
+  position: relative;
+  left: 1100px;
+  padding-bottom: 15px;
+
+  font-size: 15px;
+
+  color: rgb(9, 52, 243);
+}
+.wsjg {
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+  font-family: "Original Surfer", cursive;
+  position: relative;
+  animation: mymove 12s infinite;
+  animation-timing-function: linear;
+}
+@keyframes mymove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 800px;
+    color: black;
+  }
+}
+
+.join-background {
+  background-image: url(https://images.pexels.com/photos/844297/pexels-photo-844297.jpeg?cs=srgb&dl=pexels-eberhard-grossgasteiger-844297.jpg&fm=jpg);
+ overflow: hidden;
+  image-resolution: 1080px 1700px;
+ background-size: 1500px 800px;
+
+}
+.chat-background{
+  background-image: url(https://images.pexels.com/photos/709552/pexels-photo-709552.jpeg?cs=srgb&dl=pexels-ian-turnell-709552.jpg&fm=jpg);
+ background-size: 1800px 1100px;
+  image-resolution: 1080px 1700px;
+  width:auto;
+  height:auto;
+}
+.join-container {
+  max-width: auto;
+  margin: auto;
+
+  color: #3db8ff;
+}
+
+.join-header {
+  text-align: center;
+  padding: 20px;
+}
+
+.join-main {
+  padding: 30px 40px;
+}
+
+.join-main p {
+  margin-bottom: 20px;
+}
+
+.join-main .form-control {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.join-main label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.join-main input[type="text"] {
+  font-size: auto;
+  padding: 5px;
+  height: 40px;
+  width: 100%;
+}
+
+.join-main select {
+  font-size: 16px;
+  padding: 5px;
+  height: 40px;
+  width: 100%;
+}
+
+.join-main .btn {
+  color: #3db8ff;
+  margin-top: 20px;
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .chat-main {
+    display: flex;
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .chat-sidebar {
+    display: none;
+  }
+}
+.AboutMe {
+  padding: 10px;
+
+  border-bottom-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+.image {
+  display: flex;
+  align-items: left;
+  padding-left: 120px;
+  justify-content: left;
+}
+
+.headerText {
+  text-align: center;
+  padding-top: 10px;
+  color: #3db8ff(10, 14, 255);
+  font-family: "Original Surfer", cursive;
+}
+.descripshion {
+  padding: 10px;
+  text-align: justify;
+  color: #207bb8;
+  font-family: "https://fonts.google.com/specimen/Reenie+Beanie?preview.size=24&preview.text_type=alphabet#standard-styles";
+}
+.Photo {
+  padding: right 50px;
+  border-radius: 50px;
+  height: 100px;
+}
+.imageText {
+  padding-top: 75px;
+  color: rgb(107, 104, 104);
+  font-weight: bold;
+  font-family: monospace;
+  cursor: help;
+  transition: 0.5s linear;
+}
+.imageText:hover .myname:nth-child(1) {
+  margin-right: 5px;
+}
+.imageText:hover .myname:nth-child(2) {
+  margin-left: 30px;
+}
+.imageText:hover span {
+  color: #fff;
+  text-shadow: 0 0 10px rgb(247, 247, 247), 0 0 20px rgb(255, 255, 255),
+    0 0 40px #fff;
+}
+.instagram {
+  display: flex;
+  align-items: left;
+  align-items: auto;
+  padding-left: 120px;
+  justify-content: left;
+}
+.Social-media {
+  display: flex;
+  cursor: default;
+}
+.Social-Header {
+  text-align: center;
+  color: rgb(17, 21, 226);
+}
+.social-text {
+  padding-top: 70px;
+}
+.instagramLogo {
+  padding: right 50px;
+  border-radius: 50px;
+  height: 100px;
+}
+
+.logo-discord {
+  padding: right 60px;
+  border-radius: 50px;
+  height: 100px;
+}
+
+.discord {
+  
+  align-items: left;
+  padding-left: 120px;
+  justify-content: left;
+}
+.github {
+  align-items: left;
+  padding-left: 120px;
+  justify-content: left;
+}
+.logo-github {
+  padding: right 70px;
+  border-radius: 50px;
+  height: 100px;
+}
+.games{
+ text-align: left;
+  
+
+}
+.game-2048{
+  color: #f5f5f8; 
+  padding: 10px;
+}
+.Text-Games{
+  color: #0c0cf3;
+  right: 100px;
+}
+.Game-link{
+  display: block;
+ color: rgb(100, 102, 100);
+  text-align: right;
+  padding-right: 50px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+.jt {
+  position: relative;
+  font-size: 25px;
+  font-family: 'Staatliches', sans-serif;
+  text-transform: uppercase;
+  font-display: swap;
+  text-shadow: 0 0 10px rgb(253, 50, 14);
+}
+
+.jt__row {
+  display: block;
+}
+.jt__row:nth-child(1) {
+  clip-path: polygon(-10% 75%, 110% 75%, 110% 110%, -10% 110%);
+}
+.jt__row:nth-child(2) {
+  clip-path: polygon(-10% 50%, 110% 50%, 110% 75.3%, -10% 75.3%);
+}
+.jt__row:nth-child(3) {
+  clip-path: polygon(-10% 25%, 110% 25%, 110% 50.3%, -10% 50.3%);
+}
+.jt__row:nth-child(4) {
+  clip-path: polygon(-10% 0%, 110% 0%, 110% 25.3%, -10% 25.3%);
+}
+
+.jt__row.jt__row--sibling {
+  position: absolute;
+  top: 0;
+  left: 0;
+  user-select: none;
+  width:800px;
+}
+
+.jt__text {
+  padding-top:60px;
+  padding-left: 5px;
+  display: block;
+  color: #f11212;
+  transform-origin: bottom left;
+  animation: moveIn 2s 0s cubic-bezier(.36,0,.06,1) alternate infinite ;
+}
+.jt__row:nth-child(1) .jt__text {
+  transform: translateY(-0.1em);
+}
+.jt__row:nth-child(2) .jt__text {
+  transform: translateY(-0.3em) scaleY(1.1);
+}
+.jt__row:nth-child(3) .jt__text {
+  transform: translateY(-0.5em) scaleY(1.2) ;
+}
+.jt__row:nth-child(4) .jt__text {
+  transform: translateY(-0.7em) scaleY(1.3) ;
+}
+.jt__row:nth-child(5) .jt__text {
+  transform: translateY(-0.9em) scaleY(1.4) ;
+}
+.jt__row:nth-child(6) .jt__text {
+  transform: translateY(-1.1em) scaleY(1.5) ;
+}
+
+@keyframes moveIn {
+  50%, 100% { 
+    transform: translateY(0em)
+  }
+  0%   { 
+  opacity: 0; 
+  filter: blur(10px);
+  
+  }
+  100% { 
+  opacity: 1; 
+  filter: blur(0px);
+  }
+}
+
+.debug .jt__row:nth-child(even) {
+  color: rgb(245, 19, 19);
+  background: white;
+}
+.debug .jt__row:nth-child(odd) {
+  color: white;
+  background: rgb(247, 10, 10);
+}
+
+
+
+
+.join-Info  {
+  font-weight: 700;
+  text-align: center;
+  font-size: 40px;
+  font-family: "https://fonts.google.com/specimen/Reenie+Beanie?preview.size=24&preview.text_type=alphabet#standard-styles";
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #000, rgb(9, 176, 253), #000);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 12s linear infinite;
+  position: relative;
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}
+
+.JustChating{
+  font-weight: 700;
+  text-align: center;
+  font-size: 40px;
+  font-family: "https://fonts.google.com/specimen/Reenie+Beanie?preview.size=24&preview.text_type=alphabet#standard-styles";
+  text-transform: uppercase;
+  background: linear-gradient(90deg, rgb(98, 94, 94), rgb(9, 176, 253), #000);
+  letter-spacing: 5px;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: shine 5s linear infinite;
+  position: relative;
+}
+
+@keyframes shine {
+  0% {
+    background-position-x: -500%;
+  }
+  100% {
+    background-position-x: 500%;
+  }
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px 15px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.text{
+  display: hidden;
+}
+/* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: #000;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #04AA6D;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}

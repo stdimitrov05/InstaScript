@@ -1,0 +1,169 @@
+.supports-background{
+  background-image: url(https://images.pexels.com/photos/1363876/pexels-photo-1363876.jpeg?cs=srgb&dl=pexels-travis-blessing-1363876.jpg&fm=jpg);
+  background-size: 1500px 1500px;
+}
+.header{
+  text-align: center;
+}
+.Info{
+  align-items: center;
+}
+/* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: #555;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/* Current/active navbar link */
+.active {
+  background-color: #04AA6D;
+}
+
+/* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+.text-effect {
+  overflow: hidden;
+  position: relative;
+  filter: contrast(110%) brightness(190%);
+  
+  
+}
+
+.neon {
+  position: relative;
+  background: rgb(7, 7, 7);
+  color: transparent;
+  
+}
+.neon::before, .neon::after {
+  content: attr(data-text);
+  color: white;
+  filter: blur(0.02em);
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+.neon::after {
+  mix-blend-mode: difference;
+}
+
+.gradient,
+.spotlight {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  pointer-events: none;
+  z-index: 10;
+}
+
+.gradient {
+  background: linear-gradient(45deg, rgb(253, 5, 5), rgb(11, 11, 255));
+  mix-blend-mode: multiply;
+}
+
+.spotlight {
+  -webkit-animation: light 5s infinite linear;
+          animation: light 5s infinite linear;
+  background: radial-gradient(circle, white, transparent 25%) 0 0/25% 25%, radial-gradient(circle, white, rgb(105, 105, 105) 25%) 50% 50%/12.5% 12.5%;
+  top: -100%;
+  left: -100%;
+  mix-blend-mode: color-dodge;
+}
+
+@-webkit-keyframes light {
+  100% {
+    transform: translate3d(50%, 50%, 0);
+  }
+}
+
+@keyframes light {
+  100% {
+    transform: translate3d(50%, 50%, 0);
+  }
+}
+.neon {
+  font: 700 55px "Lato", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1px;
+  
+}
+.neon:focus {
+  outline: none;
+  border: 1px dotted white;
+}
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f100;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 1000px;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: rgba(187, 187, 187, 0);
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgba(255, 255, 255, 0);
+  color: rgba(235, 242, 247, 0.87);
+  transform: rotateY(180deg);
+}
+.social-media{
+  color: #fff;
+  text-align: right;
+  color: rgba(235, 242, 247, 0.801);
+  padding-left: 190px;
+}
+.about-me{
+  text-align: center;
+  color: rgba(235, 242, 247, 0.815);
+  size: 50px;
+}
