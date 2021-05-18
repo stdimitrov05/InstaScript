@@ -1,0 +1,22 @@
+{
+  "name": "instascript",
+  "version": "1.0.0",
+  "description": "My first social media",
+  "main": "index.js",
+  "scripts": {
+    "test": "expo start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stdimitrov05/InstaScript.git"
+  },
+  "author": "Stanislav Dimitrov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stdimitrov05/InstaScript/issues"
+  },
+  "homepage": "https://github.com/stdimitrov05/InstaScript#readme",
+  "dependencies": {
+    "expo": "^41.0.1"
+  }
+}
