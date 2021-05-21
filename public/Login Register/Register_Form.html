@@ -1,46 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-          <meta charset="UTF-8">
-          <meta http-equiv="X-UA-Compatible" content="IE=edge">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Register_Form</title>
-          <link rel="stylesheet" href="./style.css">
-          <link rel="script" href="./script.js">
-</head>
-<body>
-       <!-- Button to open the modal -->
-<button onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register_Form</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="script" href="./script.js" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body style="background-image: url(../image/backgraund.gif) ;overflow: auto;">
+    <!-- Button to open the modal -->
 
-<!-- The Modal (contains the Sign Up form) -->
-<div id="id01" class="modal">
-  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">Close</span>
-  <form class="modal-content" action="../MainPage/mainpage.html">
-    <div class="container">
-      <h1>Sign Up</h1>
-      <p>Please fill in this form to create an account.</p>
-      <hr>
-      <label for="email"><b>Email</b></label>
-      <input type="text" placeholder="Enter Email" name="email" required>
+    <!-- The Modal (contains the Sign Up form) -->
 
-      <label for="psw"><b>Password</b></label>
-      <input type="password" placeholder="Enter Password" name="psw" required>
+    <form class="modal-content" action="../MainPage/mainpage.html">
+      <div class="container">
+        <h1>Sign Up</h1>
+        <p>Please fill in this form to create an account.</p>
+        <hr />
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required />
 
-      <label for="psw-repeat"><b>Repeat Password</b></label>
-      <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+        <label for="psw"><b>Password</b></label>
+        <input
+          type="password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+        />
 
-      <label>
-        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-      </label>
+        <label for="psw-repeat"><b>Repeat Password</b></label>
+        <input
+          type="password"
+          placeholder="Repeat Password"
+          name="psw-repeat"
+          required
+        />
 
-      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">    </a>.</p>
+        <label >
+          <input
+            type="checkbox"
+            checked="checked"
+            name="remember"
+          "
+          
+          />
+          Remember me
+        </label>
 
-      <div class="clearfix">
-        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-        <button type="submit" class="signup">Sign Up</button>
+        <p>
+          By creating an account you agree to our
+          <a  style="color: dodgerblue;cursor: pointer;" onclick="alert('It is important to know:\nThe Instascript web application is still under development and the profiles you create are not saved to the system. ')" >  Agree</a>.
+        </p>
+
+        <div class="clearfix">
+          <button type="submit" class="signup">Sign Up</button>
+          <button
+            type="button"
+            onclick="window.open('../MainPage/mainpage.html')"
+            class="cancelbtn"
+          >
+            Cancel
+          </button>
+          
+        </div>
       </div>
-    </div>
-  </form>
-</div>   
-</body>
+      
+    </form>
+   
+    <footer class="footer-main" >
+      <div class="social-media" style="padding-top: 10px;">
+        <img src="../image/logo-removebg-preview.png" alt="logo" style="z-index: -1px;height: 150px ">
+      <a  href="https://www.instagram.com/st_d05/">
+      <i class="fa fa-fw fa-instagram" style="margin-left: 10px;color: rgb(253, 5, 253);" >Instagram</i>
+      </a>
+      <a  href="https://github.com/stdimitrov05">
+      <i class="fa fa-fw fa-github" style="margin-left: 80px;color: #fff">Github</i>
+      <text class="fa fa-fw fa-hacker-news"style="color: #fff;margin-left: 650px;"> st_d05</text>
+      </a>
+   
+     
+      </div>
+    </footer>
+  </body>
 </html>

@@ -11,56 +11,54 @@
     <link rel="script" href="./scripts.js" />
     <title>InstaScript: Main page </title>
     <link rel="shortcut icon" type="image/x-icon" href="../image/logo-removebg-preview.png">
+    <div class="topnav">
+      <a class="active" href="./mainpage.html">Home</a>
+      <a href="../supports/supports.html">Supports</a>
+      <a href="../index.html">Contact</a>
+      <a href="../Dynamic Backgraound/fluid.html">Games</a>
+      <button  onclick="document.getElementById('id01').style.display='block'" style="overflow: auto;"><h2>Login</h2></button>
+
+     
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'"
+    class="close" title="Close Modal">&times;</span>
+    
+      
+      <form class="modal-content animate" action="../MainPage/mainpage.html">
+        <div class="imgcontainer">
+          <img src="../image/R8a4053ac585059669df2949d165471f6.png" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+    
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+          
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me</label>
+          </label>
+        </div>
+    
+        <div class="container" style="background-color:#f1f1f100;padding-left: 50px;padding-top: 5px;padding-bottom: 10px;">
+          
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" >Cancel</button>
+          
+         
+        </div>
+        <a class="register" href="../Login Register/Register_Form.html">Create Profile</a>
+        
+</form>
+
+    </div>  
+    
+    </div>
   </head>
   <body class="back">
     
-      <div class="topnav">
-        <a class="active" href="./mainpage.html">Home</a>
-        <a href="../supports/supports.html">Supports</a>
-        <a href="../index.html">Contact</a>
-        <a href="../Dynamic Backgraound/fluid.html">Games</a>
-        <button  onclick="document.getElementById('id01').style.display='block'" style="background-color: rgba(0, 0, 0, 0.007); color: blue ;  border: 1px solid rgba(14, 0, 0, 0);padding-left: 1300px;"><h2>Login</h2></button>
-
-       
-      <div id="id01" class="modal">
-        <span onclick="document.getElementById('id01').style.display='none'"
-      class="close" title="Close Modal">&times;</span>
-      
-        
-        <form class="modal-content animate" action="../MainPage/mainpage.html">
-          <div class="imgcontainer">
-            <img src="../image/R8a4053ac585059669df2949d165471f6.png" alt="Avatar" class="avatar">
-          </div>
-      
-          <div class="container">
-            <label for="uname"><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
-      
-            <label for="psw"><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" required>
-            
-            <button type="submit">Login</button>
-            <label>
-              <input type="checkbox" checked="checked" name="remember"> Remember me</label>
-            </label>
-          </div>
-      
-          <div class="container" style="background-color:#f1f1f100;padding-left: 50px;padding-top: 5px;padding-bottom: 10px;">
-            
-            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" >Cancel</button>
-            
-           
-          </div>
-          <a class="register" href="../Login Register/Register_Form.html">Create Profile</a>
-          <script>
-            console.log('open login menu')
-            
-          </script>
-</form>
-
-      </div>  
-      
-      </div>
+     
       
       
       <h1 class="wsjg">Welcome То Web InstaScrip application 🙂 </h1>
